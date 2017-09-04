@@ -11,7 +11,7 @@ public class PathSpawner : MonoBehaviour {
         //var path = Instantiate(pathObjects[0]);
         //path.transform.parent = transform;
         int offset = 0;
-        while (offset < 500)
+        while (offset < 800)
         {
             CreateRandomPath(offset);
             offset += 21/2;

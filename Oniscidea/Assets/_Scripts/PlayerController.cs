@@ -25,9 +25,9 @@ public class PlayerController : MonoBehaviour {
 	void Update ()
     {
         float hAxis = Input.GetAxis("Horizontal");
-        //float vAxis = Input.GetAxis("Vertical");
+        float vAxis = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(hAxis,0,0);
+        Vector3 movement = new Vector3(hAxis,0,vAxis);
 
         rd.MovePosition(transform.position + movement);
     }

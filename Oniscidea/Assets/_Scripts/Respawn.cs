@@ -15,8 +15,9 @@ public class Respawn : MonoBehaviour
     {
         //if (woodlouse.position = respawnPoint)
         woodlouse.transform.position = respawnPoint.transform.position;
-
+        woodlouse.transform.rotation.x.ToString();
         woodlouse.position = Vector3.forward * speed;
+        //woodlouse.transform.position = Vector3.forward;
     }
 	// Use this for initialization
 	//void Start () {

@@ -13,9 +13,9 @@ public class ObsticleSpawner : MonoBehaviour {
     //private void OnBeforeTransformParentChanged()
     void CreateTree()
     {
-        var tree = Instantiate(TreeTrunk);
-        tree.transform.parent = transform;
-        tree.transform.Translate(Random.Range(-10,))
+        //var tree = Instantiate(TreeTrunk);
+        //tree.transform.parent = transform;
+        //tree.transform.Translate(Random.Range(-10,))
     }
 
     // Update is called once per frame

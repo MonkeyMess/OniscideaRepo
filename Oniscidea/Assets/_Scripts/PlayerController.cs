@@ -31,4 +31,11 @@ public class PlayerController : MonoBehaviour {
 
         rd.MovePosition(transform.position + movement);
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Collectable"))
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

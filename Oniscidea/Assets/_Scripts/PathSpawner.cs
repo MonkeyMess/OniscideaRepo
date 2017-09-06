@@ -5,6 +5,7 @@ using UnityEngine;
 public class PathSpawner : MonoBehaviour {
 
     public GameObject[] pathObjects;
+    public GameObject End;
     // Use this for initialization
     void Start()
     {
@@ -17,11 +18,11 @@ public class PathSpawner : MonoBehaviour {
             CreatePath(offset);
             offset += 21/2;
 
-            if (offset == 400)
+            if (offset == 799)
             {
                 //Y = 1;
-                CreatePath(offset);
-                offset += 11;
+                EndPath(offset);
+                offset += 10;
             }
             
         }
@@ -41,6 +42,13 @@ public class PathSpawner : MonoBehaviour {
         var path = Instantiate(pathObjects[pathIndex]);
         path.transform.parent = transform;
         path.transform.Translate(0, 0, offset);
+    }
+    void EndPath(float offset)
+    {
+        var end = Instantiate(End);
+        end.transform.parent = transform;
+        end.transform.Translate(0, 0, offset);
+
     }
 
 	

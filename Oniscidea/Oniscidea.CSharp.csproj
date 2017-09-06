@@ -81,10 +81,12 @@
     <Compile Include="Assets\_Scripts\FollowingCamera.cs" />
     <Compile Include="Assets\_Scripts\LevelManager.cs" />
     <Compile Include="Assets\_Scripts\LogCollectable.cs" />
+    <Compile Include="Assets\_Scripts\LogSpawn.cs" />
     <Compile Include="Assets\_Scripts\ObsticleSpawner.cs" />
     <Compile Include="Assets\_Scripts\PathSpawner.cs" />
     <Compile Include="Assets\_Scripts\PlayerController.cs" />
     <Compile Include="Assets\_Scripts\Respawn.cs" />
+    <Compile Include="Assets\_Scripts\Rotator.cs" />
     <Compile Include="Assets\_Scripts\ScoreManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

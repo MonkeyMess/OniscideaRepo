@@ -8,13 +8,13 @@ public class ObsticleSpawner : MonoBehaviour {
     public GameObject TrunkObj;
     [SerializeField]
     public GameObject SapBlobObj;
+
+    //public GameObject 
 	// Use this for initialization
 	void Start ()
     {
         CreateTrunk();
         CreateTrunk();
-        CreateTrunk();
-        CreateSapBlob();
         CreateSapBlob();
         CreateSapBlob();
 	}
@@ -24,18 +24,18 @@ public class ObsticleSpawner : MonoBehaviour {
     {
         var tree = Instantiate(TrunkObj);
         tree.transform.parent = transform;
-        tree.transform.Translate(Random.Range(-30,30),0,Random.Range(-5,5));
+        tree.transform.Translate(Random.Range(-10,10),-6,Random.Range(-5,500));
     }
     void CreateSapBlob()
     {
         var blob = Instantiate(SapBlobObj);
         blob.transform.parent = transform;
-        blob.transform.Translate(Random.Range(-20, 20), 0, Random.Range(-5, 5));
+        blob.transform.Translate(Random.Range(-10, 10), -6, Random.Range(-5, 500));
     }
 
     // Update is called once per frame
     void Update ()
-        {
+    {
 		
 	}
 }

@@ -11,10 +11,19 @@ public class PathSpawner : MonoBehaviour {
         //var path = Instantiate(pathObjects[0]);
         //path.transform.parent = transform;
         int offset = 0;
+        //int Y = 0;
         while (offset < 800)
         {
-            CreateRandomPath(offset);
+            CreatePath(offset);
             offset += 21/2;
+
+            if (offset == 400)
+            {
+                //Y = 1;
+                CreatePath(offset);
+                offset += 11;
+            }
+            
         }
 
         //CreateRandomPath(0);
@@ -26,7 +35,7 @@ public class PathSpawner : MonoBehaviour {
 
     }
 
-    void CreateRandomPath(float offset)
+    void CreatePath(float offset)
     {
         int pathIndex = Random.Range(0, pathObjects.Length);
         var path = Instantiate(pathObjects[pathIndex]);

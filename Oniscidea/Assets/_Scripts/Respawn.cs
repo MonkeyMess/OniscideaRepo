@@ -14,9 +14,9 @@ public class Respawn : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //if (woodlouse.position = respawnPoint)
-        woodlouse.transform.position = respawnPoint.transform.position;
+        //woodlouse.transform.position = respawnPoint.transform.position;
         //woodlouse.transform.rotation.x.ToString();
-        woodlouse.position = Vector3.forward * speed;
+        //woodlouse.position = Vector3.forward * speed;
         //woodlouse.transform.position = Vector3.forward;
     }
 	// Use this for initialization
